@@ -1,0 +1,45 @@
+{% extends 'Landing_Page/base.html' %}
+{% load static %} 
+{% block content %}
+<head>
+    <style>
+    .myDiv {
+      /* border: 5px outset rgb(180, 209, 251); */
+      background-color: rgb(160, 231, 255);
+      text-align: center;
+      width: 50%;
+    }
+    .headingDiv {
+        /* background-color:rgb(255, 165, 195); */
+        height: 200px;
+    }
+    .button {
+        border:none;
+        background-color: plum;
+        text-align: center;
+    }
+    </style>
+    </head>
+    <font>
+<body style="background-color:rgb(180, 209, 251);">
+    <div class = "headingDiv">
+        <h1><b>{{First_Page_Data.heading}}</h1></b>
+        <p style=" font-family:Arial, Helvetica, sans-serif"
+        
+        </div>
+    <div class="myDiv">
+        <img src="{% static 'image1.jpg' %}" alt="Image of a brain with two different halves. On the left side, there is a lot of different colours used with several mathematical representations. Some colours used are blue and orange. On the right side however, " width = '300', height = '300' align = "right">
+        <h6>{{First_Page_Data.description}}</h6>
+        <button type="button" class="button">Learn More...</button>
+        <!-- <button style="background-color:plum"; -->
+    </button>
+    <!-- <p>Play Audio</p> -->
+    <!-- <button>
+        Play Audio
+    </button>  -->
+    <button type="button" class="button">Read Aloud</button>
+      </div> 
+    </font>
+    </body>
+    
+{% endblock %}
