@@ -37,9 +37,15 @@
     <!-- <button>
         Play Audio
     </button>  -->
-    <button type="button" class="button">Read Aloud</button>
+    <button type="button" onclick="play()" class="button">Read Aloud</button>
       </div> 
     </font>
+    <script>
+        function play() {
+        var audio = new Audio('http://127.0.0.1:8006/static/audio.mp3');
+        audio.play();
+        }
+    </script>
     </body>
     
 {% endblock %}
